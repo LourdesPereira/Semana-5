@@ -15,15 +15,14 @@
         android:layout_height="40dp"
         android:background="@color/cardview_light_background"
         android:elevation="4dp"
-        app:popupTheme="@style/Widget.AppCompat.Light.ActionBar.Solid" />
+        app:popupTheme="@style/Widget.AppCompat.Light.ActionBar.Solid">
+    </androidx.appcompat.widget.Toolbar>
 
 <androidx.recyclerview.widget.RecyclerView
-
     app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/recyclerviewMascota"
-    >
+    android:id="@+id/recyclerviewMascota">
 
 
 </androidx.recyclerview.widget.RecyclerView>

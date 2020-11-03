@@ -3,13 +3,24 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
         <!-- "Mark Favorite", should appear as action button if possible -->
+    <group android:id="@+id/menuInstitucionalGroup">
+        <item
+            android:id="@+id/menuContacto"
+            android:title="Contacto"
+            app:showAsAction="withText" />
+        <item
+            android:id="@+id/menuAcerca"
+            android:title="Acerca de"
+            app:showAsAction="withText" />
+
+    </group>
     <item
-        android:id="@+id/action_favorite"
+        android:id="@+id/menuEstrella"
         android:icon="@drawable/estrella"
         android:title="Estrella"
         app:showAsAction="ifRoom" />
     <item
-        android:id="@+id/action_huella"
+        android:id="@+id/menuHuella"
         android:icon="@drawable/huella"
         android:title="Huella"
         app:showAsAction="ifRoom" />
