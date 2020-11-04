@@ -1,30 +1,20 @@
-<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
-    android:name="com.example.myfirstapp.MyChildActivity"
-    android:label="@string/title_activity_child"
-    android:parentActivityName="com.example.myfirstapp.MainActivity"
-    tools:context=".SecondActivity">
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/my_toolbar_second"
+    <fragment
+        android:id="@+id/headlines_fragment"
+        android:name="com.example.myapplication.SecondActivity"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <fragment
+        android:id="@+id/article_fragment"
+        android:name="com.example.myapplication.SecondActivity"
         android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:background="@color/cardview_light_background"
-        android:elevation="4dp"
-        app:popupTheme="@style/Widget.AppCompat.Light.ActionBar.Solid" />
+        android:layout_height="match_parent"
+        android:layout_weight="2" />
 
-<androidx.recyclerview.widget.RecyclerView
-    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:id="@+id/recyclerviewFavoriteMascota"
-    >
-
-
-</androidx.recyclerview.widget.RecyclerView>
-    </LinearLayout>
+</LinearLayout>
